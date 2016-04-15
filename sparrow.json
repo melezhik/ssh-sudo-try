@@ -1,0 +1,5 @@
+{
+    "name" : "ssh-sudo-try",
+    "version" : "0.0.1",
+    "description": "Connects to remote server by ssh and determines if user has sudo access for some command"
+}
