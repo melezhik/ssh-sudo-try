@@ -1,2 +1,10 @@
-within: status: 
+between: ssh_begin ssh_end
+regexp: \S+
+
+code: for my $l (@{stream()}) { note join "\n", @$l }
+
+reset_context:
+
+
 status: 0
+
