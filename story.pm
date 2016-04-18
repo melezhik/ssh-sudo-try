@@ -1,4 +1,4 @@
-my $servers = config()->{'ssh-sudo-try'}->{servers};
+my $servers = config()->{main}->{servers};
 
 for my $s (split /\s+/, $servers){
     run_story("ssh-and-sudo", { server => $s } );

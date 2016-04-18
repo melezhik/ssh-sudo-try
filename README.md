@@ -15,7 +15,8 @@ sparrow plg install ssh-sudo-try
     $ sparrow check set cluster check-sudo-bash ssh-sudo-try
     $ sparrow check ini cluster check-sudo-bash 
 
-    [ssh-sudo-try]
+    [main]
+
     servers = 127.0.0.1 foo.bar.baz 192.168.0.0.1
   
     ssh_command = ssh -l foo -i ~/my_key.pem 
@@ -23,6 +24,10 @@ sparrow plg install ssh-sudo-try
     sudo_command = sudo /bin/bash -c 'echo'
 
     $ sparrow check run cluster check-sudo-bash
+
+# Setting parameters over runtime
+
+    $ sparrow check run cluster check-sudo-bash --param main.servers=192.168.0.1 --param main.sudo_command='sudo /etc/init.d/nginx status'
  
 # AUTHOR
 

@@ -1,5 +1,5 @@
-my $ssh_command = config()->{'ssh-sudo-try'}->{ssh_command};
-my $sudo_command = config()->{'ssh-sudo-try'}->{sudo_command};
+my $ssh_command = config()->{main}->{ssh_command};
+my $sudo_command = config()->{main}->{sudo_command};
 my $server = story_var('server');
 
 
