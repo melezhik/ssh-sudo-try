@@ -16,7 +16,7 @@ sparrow plg install ssh-sudo-try
     $ sparrow check ini cluster check-sudo-bash 
 
     [main]
-    servers = 127.0.0.1 foo.bar.baz,192.168.0.0.1
+    servers = 127.0.0.1,foo.bar.baz,192.168.0.0.1
   
     ssh_command = ssh -l foo -i ~/my_key.pem 
 
