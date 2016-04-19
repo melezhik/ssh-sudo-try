@@ -1,6 +1,7 @@
 {
     "name" : "ssh-sudo-try",
-    "version" : "0.0.5",
+    "version" : "0.0.5.1",
     "description": "Connects to remote server by ssh and determines if user has sudo access for some command",
-    "url" : "https://github.com/melezhik/ssh-sudo-try"
+    "url" : "https://github.com/melezhik/ssh-sudo-try",
+    "engine" : "generic"
 }
