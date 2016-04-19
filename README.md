@@ -24,9 +24,9 @@ sparrow plg install ssh-sudo-try
 
     $ sparrow check run cluster check-sudo-bash
 
-# Setting parameters over runtime
+# Setting parameters on runtime
 
-    $ sparrow check run cluster check-sudo-bash --param main.servers=192.168.0.1,192.168.0.2 --param main.sudo_command='sudo /etc/init.d/nginx status'
+    $ sparrow check run cluster check-sudo-bash --param main.servers=192.168.0.1,192.168.0.2 --param main.sudo_command='"sudo /etc/init.d/nginx status'"
  
 # AUTHOR
 
