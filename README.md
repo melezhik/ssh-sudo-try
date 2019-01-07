@@ -12,8 +12,15 @@ sparrow plg install ssh-sudo-try
 
 Tomtit/Sparrowdo
 
+    # check for the current user
     task-run "ssh/sudo check", "ssh-sudo-try", %(
       servers => "23.100.124.15,23.100.124.16,23.100.124.17"
+    );
+
+    # check for specific current user
+    task-run "ssh/sudo check", "ssh-sudo-try", %(
+      servers       => "23.100.124.15,23.100.124.16,23.100.124.17"
+      ssh_command   => "ssh -l foo -tt"
     );
 
 
