@@ -1,0 +1,1 @@
+bash "sparrow plg upload";
